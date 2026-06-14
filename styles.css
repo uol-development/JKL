@@ -33,6 +33,8 @@ a{text-decoration:none;color:inherit}
 .container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
 .center{text-align:center;margin-top:26px}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+/* prevent grid blowout from wide images (esp. mobile single-column) */
+.hero__inner>*,.problem__inner>*,.founder__inner>*,.abouthero__inner>*,.why__inner>*,.location__inner>*,.media__inner>*,.testi__inner>*{min-width:0}
 
 /* ===== HEADINGS / SHARED ===== */
 .section{padding:64px 0}
@@ -110,7 +112,7 @@ body.menu-locked{overflow:hidden}
 .stat__icon{font-size:20px}
 .stat strong{display:block;font-size:15px;color:#2f4a2a}
 .stat small{color:var(--muted);font-size:12px}
-.hero__media{position:relative;display:grid;place-items:center}
+.hero__media{position:relative;display:grid;grid-template-columns:minmax(0,1fr);place-items:center}
 .hero__blob{
   position:absolute;width:min(430px,100%);aspect-ratio:43/52;height:auto;background:var(--dark-green);
   border-radius:55% 45% 50% 50%/60% 55% 45% 40%;right:0;
