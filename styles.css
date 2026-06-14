@@ -1,8 +1,9 @@
 /* ===== BRAND TOKENS ===== */
 :root{
   /* Brand greens — shared across all pages */
-  --dark-green:#16401d;     /* top bar, footer, CTA, dark bands */
-  --dark-green-2:#1e4d26;
+  --dark-green:#032d1c;     /* top bar, footer, CTA, dark bands */
+  --dark-green-2:#004d26;
+  --dark-grad:linear-gradient(90deg,#032d1c 0%,#004d26 50%,#032d1c 100%);
   --green:#5a8a37;          /* primary buttons / accents */
   --green-d:#496f2b;        /* button hover */
   --accent:#6aa63b;         /* highlight text */
@@ -64,7 +65,7 @@ a{text-decoration:none;color:inherit}
 .btn--outline-light:hover{background:rgba(255,255,255,.1)}
 
 /* ===== TOP BAR ===== */
-.topbar{background:var(--dark-green);color:#dfe7d8;font-size:12px;padding:8px 0}
+.topbar{background:var(--dark-grad);color:#dfe7d8;font-size:12px;padding:8px 0}
 .topbar__inner{display:flex;justify-content:space-between;align-items:center}
 .topbar__left{display:flex;gap:24px}
 .topbar__social{display:flex;gap:8px}
@@ -175,7 +176,7 @@ body.menu-locked{overflow:hidden}
 
 /* ===== RISK ===== */
 .risk__box{
-  background:var(--dark-green);color:#eaf1e3;border-radius:18px;overflow:hidden;
+  background:var(--dark-grad);color:#eaf1e3;border-radius:18px;overflow:hidden;
   display:grid;grid-template-columns:160px 1fr 320px;gap:24px;align-items:center;padding:28px 32px;
 }
 .risk__media img{border-radius:12px}
@@ -224,7 +225,7 @@ body.menu-locked{overflow:hidden}
 
 /* ===== CTA ===== */
 .cta__box{
-  background:radial-gradient(circle at 20% 20%,var(--dark-green-2),var(--dark-green));
+  background:var(--dark-grad);
   color:#eaf1e3;border-radius:20px;padding:40px;
   display:grid;grid-template-columns:130px 1.2fr 1fr;gap:30px;align-items:center;
 }
@@ -236,7 +237,7 @@ body.menu-locked{overflow:hidden}
 .cta__phone{font-size:12px;color:#bdcab2 !important;margin-top:8px}
 
 /* ===== FOOTER ===== */
-.footer{background:var(--dark-green);color:#cdd9c4;padding-top:54px;font-size:13px}
+.footer{background:var(--dark-grad);color:#cdd9c4;padding-top:54px;font-size:13px}
 .footer__inner{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1fr 1.4fr;gap:28px;padding-bottom:40px}
 .brand--light .brand__mark{color:#bfe29a;border-color:#bfe29a}
 .brand--light .brand__name{color:#fff}
@@ -341,7 +342,7 @@ body.menu-locked{overflow:hidden}
 .pillar--center .pillar__body p{max-width:280px}
 
 /* --- Impact dark band --- */
-.impact{background:var(--dark-green);color:#eaf1e3;padding:56px 0;background-image:linear-gradient(rgba(22,64,29,.86),rgba(22,64,29,.92)),url('https://placehold.co/1200x400/24471f/24471f');background-size:cover;background-position:center}
+.impact{background:var(--dark-grad);color:#eaf1e3;padding:56px 0}
 .impact__title{font-family:var(--font-display);font-size:30px;color:#fff;text-align:center}
 .impact__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin:30px 0 18px}
 .impact__item{text-align:center}
@@ -371,7 +372,7 @@ body.menu-locked{overflow:hidden}
 .location__inner{display:grid;grid-template-columns:.85fr 1.1fr .85fr;gap:26px;align-items:center}
 .location__text p{color:var(--muted);margin-bottom:18px}
 .location__map img{border-radius:14px;width:100%}
-.location__card{background:var(--dark-green);color:#dfe7d8;border-radius:14px;padding:26px}
+.location__card{background:var(--dark-grad);color:#dfe7d8;border-radius:14px;padding:26px}
 .location__card h3{font-family:var(--font-display);font-size:20px;color:#fff;margin-bottom:14px}
 .location__card p{font-size:13px;color:#cdd9c4;margin-bottom:12px;line-height:1.5}
 
