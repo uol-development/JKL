@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Blog — JK Lifestyle</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+<!-- ===== TOP BAR ===== -->
+<div class="top-bar">
+  <div class="container top-content">
+    <div class="top-left">
+      <span><i class="fas fa-location-dot" aria-hidden="true"></i> Aftabnagar, Dhaka, Bangladesh</span>
+      <span><i class="fas fa-phone" aria-hidden="true"></i> +880 9678 242404</span>
+    </div>
+    <div class="top-right">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MAIN HEADER ===== -->
+<header class="main-header">
+  <div class="container nav-wrapper">
+    <a href="index.html" class="logo">
+      <img src="https://jklifestyleltd.com/wp-content/uploads/2025/12/JK-LifestyleK-3.png" alt="JK Lifestyle" />
+    </a>
+
+    <nav class="main-nav">
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="dropdown"><a href="#">Our Ecosystem <i class="fas fa-chevron-down" aria-hidden="true"></i></a></li>
+        <li><a href="#">Services &amp; Impact</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li class="nav-cta"><a href="#" class="consult-btn">BOOK AN APPOINTMENT</a></li>
+      </ul>
+    </nav>
+
+    <a href="#" class="consult-btn consult-btn--header">BOOK AN APPOINTMENT</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-controls="navMenu" aria-expanded="false">
+      <i class="fas fa-bars" aria-hidden="true"></i>
+    </button>
+  </div>
+</header>
+
+<!-- ===== BLOG HERO ===== -->
+<section class="blog-hero">
+  <div class="container blog-hero__inner">
+    <div class="blog-hero__content">
+      <h1 class="blog-hero__title">Better Health Knowledge<br />for Better Living</h1>
+      <p>Explore expert insights on lifestyle medicine, nutrition, fitness, metabolic health, and preventive wellness.</p>
+      <p>Our goal is to help you better understand your health, make informed lifestyle choices, and build habits that support long-term well-being.</p>
+      <p>Whether you're looking to improve your daily routine, learn about common health challenges, or stay informed about the latest wellness practices, you'll find practical guidance here.</p>
+      <form class="blog-search" role="search" onsubmit="return false">
+        <input type="search" placeholder="Search articles..." aria-label="Search articles" />
+        <button type="submit" aria-label="Search"><i class="fas fa-magnifying-glass"></i></button>
+      </form>
+    </div>
+    <div class="blog-hero__media">
+      <img src="https://placehold.co/560x460/e8efe2/3a5a2a?text=JK+Lifestyle+Blog" alt="JK Lifestyle blog on a laptop" />
+    </div>
+  </div>
+</section>
+
+<!-- ===== CATEGORY FILTER ===== -->
+<div class="container">
+  <div class="blog-cats" role="group" aria-label="Filter articles by category">
+    <button class="cat-pill is-active" aria-pressed="true"><i class="fas fa-table-cells"></i> All Articles</button>
+    <button class="cat-pill" aria-pressed="false"><i class="fas fa-seedling"></i> Nutrition</button>
+    <button class="cat-pill" aria-pressed="false"><i class="fas fa-droplet"></i> Diabetes</button>
+    <button class="cat-pill" aria-pressed="false"><i class="fas fa-clock"></i> Fasting</button>
+    <button class="cat-pill" aria-pressed="false"><i class="fas fa-dumbbell"></i> Fitness</button>
+    <button class="cat-pill" aria-pressed="false"><i class="fas fa-spa"></i> Lifestyle</button>
+    <button class="cat-pill" aria-pressed="false"><i class="fas fa-weight-scale"></i> Weight Loss</button>
+    <button class="cat-pill" aria-pressed="false"><i class="fas fa-heart-pulse"></i> Heart Health</button>
+    <button class="cat-pill" aria-pressed="false"><i class="fas fa-disease"></i> Kidney Health</button>
+    <button class="cat-pill" aria-pressed="false"><i class="fas fa-ellipsis"></i> More</button>
+  </div>
+</div>
+
+<!-- ===== ARTICLES ===== -->
+<section class="section blog-articles" aria-labelledby="articles-heading">
+  <div class="container">
+    <h2 id="articles-heading" class="sr-only">Latest Articles</h2>
+
+    <!-- Featured row -->
+    <div class="blog-grid">
+      <article class="post-card">
+        <a href="#" class="post-card__media">
+          <span class="badge badge--featured">FEATURED</span>
+          <img src="https://placehold.co/420x260/dde7d6/3a5a2a?text=Insulin+Reset" alt="Complete guide to insulin reset" />
+        </a>
+        <div class="post-card__body">
+          <div class="post-meta">
+            <span><i class="far fa-calendar"></i> May 12, 2024</span>
+            <span><i class="far fa-clock"></i> 8 min read</span>
+            <span class="tag">Diabetes</span>
+          </div>
+          <h3 class="post-card__title"><a href="#">Complete Guide To Insulin Reset</a></h3>
+          <p>A complete science-backed guide to reset insulin resistance and improve metabolic health naturally.</p>
+          <a href="#" class="read-more">READ MORE <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <a href="#" class="post-card__media">
+          <span class="badge badge--featured">FEATURED</span>
+          <img src="https://placehold.co/420x260/eef2e7/3a5a2a?text=5+Pillars" alt="JK Lifestyle 5 pillars explained" />
+        </a>
+        <div class="post-card__body">
+          <div class="post-meta">
+            <span><i class="far fa-calendar"></i> May 05, 2024</span>
+            <span><i class="far fa-clock"></i> 7 min read</span>
+            <span class="tag">Lifestyle</span>
+          </div>
+          <h3 class="post-card__title"><a href="#">JK Lifestyle 5 Pillars Explained</a></h3>
+          <p>Understand the 5 foundational pillars that support better health, energy, and long-term well-being.</p>
+          <a href="#" class="read-more">READ MORE <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <a href="#" class="post-card__media">
+          <span class="badge badge--video"><i class="fas fa-play"></i> VIDEO</span>
+          <img src="https://placehold.co/420x260/cfe0c4/2f4a2a?text=Why+It+Works" alt="7 powerful reasons why JK Lifestyle works" />
+        </a>
+        <div class="post-card__body">
+          <div class="post-meta">
+            <span><i class="far fa-calendar"></i> Apr 28, 2024</span>
+            <span><i class="far fa-clock"></i> 6 min read</span>
+            <span class="tag">Lifestyle</span>
+          </div>
+          <h3 class="post-card__title"><a href="#">7 Powerful Reasons Why JK Lifestyle Works</a></h3>
+          <p>Discover the core principles and proven approach that make JK Lifestyle unique.</p>
+          <a href="#" class="read-more">READ MORE <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <!-- Second row -->
+      <article class="post-card">
+        <a href="#" class="post-card__media">
+          <span class="badge badge--accent">DIET PLAN</span>
+          <img src="https://placehold.co/420x260/dbe7cf/2f4a2a?text=Diet+Plan" alt="Dr. Jahangir Kabir diet plan" />
+        </a>
+        <div class="post-card__body">
+          <div class="post-meta">
+            <span><i class="far fa-calendar"></i> Apr 20, 2024</span>
+            <span><i class="far fa-clock"></i> 6 min read</span>
+            <span class="tag">Weight Loss</span>
+          </div>
+          <h3 class="post-card__title" lang="bn"><a href="#">ডা জাহাঙ্গীর কবির ডায়েট প্ল্যান | দ্রুত ওজন কমানোর ৭ সুষম খাবার সম্পূর্ণ গাইড</a></h3>
+          <a href="#" class="read-more">READ MORE <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <a href="#" class="post-card__media">
+          <img src="https://placehold.co/420x260/e6ece0/555?text=Liver+Health" alt="Exercises for a healthy liver" />
+        </a>
+        <div class="post-card__body">
+          <div class="post-meta">
+            <span><i class="far fa-calendar"></i> Apr 15, 2024</span>
+            <span><i class="far fa-clock"></i> 5 min read</span>
+            <span class="tag">Liver Health</span>
+          </div>
+          <h3 class="post-card__title" lang="bn"><a href="#">লিভার ভালো রাখার ব্যায়াম: ফ্যাটি লিভার কমাতে প্রতিদিন ১৫ মিনিটের সহজ এক্সারসাইজ</a></h3>
+          <a href="#" class="read-more">READ MORE <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <a href="#" class="post-card__media">
+          <span class="badge badge--accent">KIDNEY</span>
+          <img src="https://placehold.co/420x260/d6e6cb/2f4a2a?text=Kidney" alt="Symptoms of kidney diabetes" />
+        </a>
+        <div class="post-card__body">
+          <div class="post-meta">
+            <span><i class="far fa-calendar"></i> Apr 08, 2024</span>
+            <span><i class="far fa-clock"></i> 5 min read</span>
+            <span class="tag">Kidney Health</span>
+          </div>
+          <h3 class="post-card__title" lang="bn"><a href="#">কিডনি ডায়াবেটিসের লক্ষণ | কখন সতর্ক হবেন?</a></h3>
+          <a href="#" class="read-more">READ MORE <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+
+    <!-- Compact list -->
+    <div class="blog-list">
+      <article class="post-mini">
+        <a href="#" class="post-mini__thumb" aria-hidden="true" tabindex="-1"><img src="https://placehold.co/110x90/e3eadd/3a5a2a?text=Stress" alt="" /></a>
+        <div class="post-mini__body">
+          <h4 lang="bn"><a href="#">আধুনিক জীবনের জন্য প্রতিদিন স্ট্রেস ম্যানেজমেন্ট উপায়</a></h4>
+          <div class="post-meta"><span><i class="far fa-calendar"></i> Apr 01, 2024</span><span><i class="far fa-clock"></i> 4 min read</span><span class="tag">Lifestyle</span></div>
+          <a href="#" class="read-more">READ MORE <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="post-mini">
+        <a href="#" class="post-mini__thumb" aria-hidden="true" tabindex="-1"><img src="https://placehold.co/110x90/e3eadd/3a5a2a?text=Sleep" alt="" /></a>
+        <div class="post-mini__body">
+          <h4 lang="bn"><a href="#">ঘুম ভালো না হলে শরীরে কী হয়? উন্নত ঘুমের ১০ উপায়</a></h4>
+          <div class="post-meta"><span><i class="far fa-calendar"></i> Mar 25, 2024</span><span><i class="far fa-clock"></i> 5 min read</span><span class="tag">Sleep</span></div>
+          <a href="#" class="read-more">READ MORE <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="post-mini">
+        <a href="#" class="post-mini__thumb" aria-hidden="true" tabindex="-1"><img src="https://placehold.co/110x90/e3eadd/3a5a2a?text=Metabolism" alt="" /></a>
+        <div class="post-mini__body">
+          <h4 lang="bn"><a href="#">মেটাবলিজম বাড়ানোর ১২ টি সহজ এবং প্রাকৃতিক উপায়</a></h4>
+          <div class="post-meta"><span><i class="far fa-calendar"></i> Mar 18, 2024</span><span><i class="far fa-clock"></i> 6 min read</span><span class="tag">Lifestyle</span></div>
+          <a href="#" class="read-more">READ MORE <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="post-mini">
+        <a href="#" class="post-mini__thumb" aria-hidden="true" tabindex="-1"><img src="https://placehold.co/110x90/e3eadd/3a5a2a?text=Empty+Stomach" alt="" /></a>
+        <div class="post-mini__body">
+          <h4 lang="bn"><a href="#">সকালে খালি পেটে কী খেলে শরীর থাকবে সুস্থ ও সবল?</a></h4>
+          <div class="post-meta"><span><i class="far fa-calendar"></i> Mar 10, 2024</span><span><i class="far fa-clock"></i> 4 min read</span><span class="tag">Nutrition</span></div>
+          <a href="#" class="read-more">READ MORE <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="post-mini">
+        <a href="#" class="post-mini__thumb" aria-hidden="true" tabindex="-1"><img src="https://placehold.co/110x90/e3eadd/3a5a2a?text=Yoga" alt="" /></a>
+        <div class="post-mini__body">
+          <h4 lang="bn"><a href="#">ওজন কমাতে ইয়োগা না জিম? কোনটি বেশি কার্যকর?</a></h4>
+          <div class="post-meta"><span><i class="far fa-calendar"></i> Mar 05, 2024</span><span><i class="far fa-clock"></i> 5 min read</span><span class="tag">Fitness</span></div>
+          <a href="#" class="read-more">READ MORE <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="post-mini">
+        <a href="#" class="post-mini__thumb" aria-hidden="true" tabindex="-1"><img src="https://placehold.co/110x90/e3eadd/3a5a2a?text=PCOS" alt="" /></a>
+        <div class="post-mini__body">
+          <h4 lang="bn"><a href="#">পিসিওএস ডায়েট চার্ট: কোন খাবারগুলো খাবেন, কোনগুলো নয়</a></h4>
+          <div class="post-meta"><span><i class="far fa-calendar"></i> Feb 28, 2024</span><span><i class="far fa-clock"></i> 6 min read</span><span class="tag">PCOS</span></div>
+          <a href="#" class="read-more">READ MORE <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+
+    <!-- Pagination -->
+    <nav class="pagination" aria-label="Blog pages">
+      <a href="#" class="page-btn page-btn--nav"><i class="fas fa-chevron-left"></i> Previous</a>
+      <a href="#" class="page-btn is-active" aria-current="page">1</a>
+      <a href="#" class="page-btn">2</a>
+      <a href="#" class="page-btn">3</a>
+      <a href="#" class="page-btn">4</a>
+      <span class="page-ellipsis">…</span>
+      <a href="#" class="page-btn">10</a>
+      <a href="#" class="page-btn page-btn--nav">Next <i class="fas fa-chevron-right"></i></a>
+    </nav>
+  </div>
+</section>
+
+<!-- ===== HELP CTA ===== -->
+<section class="section help">
+  <div class="container">
+    <div class="help__box">
+      <span class="help__icon"><i class="fas fa-people-group"></i></span>
+      <div class="help__text">
+        <h2>Not Sure Where to Start?</h2>
+        <p>Health information can help you make better decisions, but every person's journey is different. If you're looking for personalized guidance on nutrition, lifestyle improvement, fitness, <strong>or overall well-being, we are here to help.</strong></p>
+      </div>
+      <div class="help__actions">
+        <a href="#" class="btn btn--solid">BOOK YOUR LIFESTYLE CONSULTATION <i class="far fa-calendar"></i></a>
+        <a href="#" class="btn btn--ghost">SPEAK WITH OUR TEAM <i class="fas fa-phone"></i></a>
+        <a href="tel:+8809678242404" class="btn btn--ghost">+880 9678 242404 <i class="fas fa-headset"></i></a>
+        <p class="help__note">Take the first step toward a healthier future today.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="index.html" class="brand brand--light">
+        <span class="brand__mark">JK</span>
+        <span class="brand__name">JK LIFESTYLE</span>
+      </a>
+      <p>Empowering individuals and families to live healthier, happier, and more sustainable lives.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="footer__col">
+      <h4>COMPANY</h4>
+      <a href="about.html">About Us</a><a href="#">Our Story</a><a href="#">Our Team</a><a href="#">Careers</a><a href="#">Contact Us</a>
+    </div>
+    <div class="footer__col">
+      <h4>OUR ECOSYSTEM</h4>
+      <a href="#">Health Revolution Ltd.</a><a href="#">Ultimate Organic Life</a><a href="#">JK Fitness Arena</a><a href="#">JK Food Avenue</a><a href="#">JK Prokriti Krishi</a>
+    </div>
+    <div class="footer__col">
+      <h4>SERVICES &amp; IMPACT</h4>
+      <a href="#">Lifestyle Healthcare</a><a href="#">Nutrition &amp; Wellness</a><a href="#">Fitness &amp; Active Living</a><a href="#">Organic Living</a><a href="#">Digital Health Solutions</a>
+    </div>
+    <div class="footer__col">
+      <h4>SUPPORT</h4>
+      <a href="#">Help Center</a><a href="#">FAQ</a><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a>
+    </div>
+    <div class="footer__col footer__contact">
+      <h4>CONTACT US</h4>
+      <p><i class="fas fa-location-dot"></i> House: 2/87, Noor Tower (Block D), Road: 01, Sector: 02, Aftabnagar, Dhaka-1212</p>
+      <p><i class="fas fa-phone"></i> +880 9678 242404</p>
+      <p><i class="fas fa-envelope"></i> info@jklifestyle.com</p>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">© 2025 JK Lifestyle Ltd. All Rights Reserved. Developed by JK Tech Ltd.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

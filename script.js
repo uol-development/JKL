@@ -156,7 +156,10 @@
     var sel = [
       '.stat__icon', '.feature__icon', '.eco__icon', '.step__circle',
       '.mvv__icon', '.pillar__icon', '.proof__item > span', '.why__step > span',
-      '.impact__item > span', '.testi__quote', '.gauge__svg'
+      '.impact__item > span', '.testi__quote', '.gauge__svg',
+      // blog page decorative icons
+      '.cat-pill i', '.post-meta i', '.read-more i', '.badge i',
+      '.page-btn i', '.blog-search button i', '.help__icon i'
     ].join(',');
     document.querySelectorAll(sel).forEach(function (el) {
       el.setAttribute('aria-hidden', 'true');
