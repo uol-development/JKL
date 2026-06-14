@@ -10,23 +10,23 @@
 
   /* ---------- 1) MOBILE MENU ---------- */
   function initMenu() {
-    var toggle = document.querySelector('.nav__toggle');
-    var menu = document.getElementById('mobileMenu');
+    var toggle = document.getElementById('menuToggle');
+    var menu = document.getElementById('navMenu');
     if (!toggle || !menu) return;
+    var icon = toggle.querySelector('i');
+    var MOBILE = 980;
+
+    function isMobile() { return window.innerWidth <= MOBILE; }
 
     function setOpen(open) {
-      menu.classList.toggle('is-open', open);
+      menu.classList.toggle('open', open);
       document.body.classList.toggle('menu-locked', open);
       toggle.setAttribute('aria-expanded', String(open));
-      menu.setAttribute('aria-hidden', String(!open));
-      menu.inert = !open; // keep closed-menu links out of the tab order / a11y tree
-      toggle.innerHTML = open ? '&times;' : '&#9776;';
+      if (icon) icon.className = open ? 'fas fa-xmark' : 'fas fa-bars';
     }
 
-    setOpen(false); // normalize initial state (inert + aria)
-
     toggle.addEventListener('click', function () {
-      setOpen(!menu.classList.contains('is-open'));
+      setOpen(!menu.classList.contains('open'));
     });
 
     // Close when a link inside the menu is tapped
@@ -34,17 +34,17 @@
       if (e.target.closest('a')) setOpen(false);
     });
 
-    // Close on Escape
+    // Close on Escape (return focus to the toggle)
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && menu.classList.contains('is-open')) {
+      if (e.key === 'Escape' && menu.classList.contains('open')) {
         setOpen(false);
         toggle.focus();
       }
     });
 
-    // Reset state if resized back to desktop
+    // Reset state when resized back to desktop
     window.addEventListener('resize', function () {
-      if (window.innerWidth > 980 && menu.classList.contains('is-open')) setOpen(false);
+      if (!isMobile() && menu.classList.contains('open')) setOpen(false);
     });
   }
 
