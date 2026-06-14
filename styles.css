@@ -113,10 +113,6 @@ body.menu-locked{overflow:hidden}
 .stat strong{display:block;font-size:15px;color:#2f4a2a}
 .stat small{color:var(--muted);font-size:12px}
 .hero__media{position:relative;display:grid;grid-template-columns:minmax(0,1fr);place-items:center}
-.hero__blob{
-  position:absolute;width:min(430px,100%);aspect-ratio:43/52;height:auto;background:var(--dark-green);
-  border-radius:55% 45% 50% 50%/60% 55% 45% 40%;right:0;
-}
 .hero__img{position:relative;border-radius:18px;width:90%}
 .hero__badge{position:absolute;left:0;bottom:34px;display:flex;align-items:center;gap:11px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 14px;box-shadow:var(--shadow);max-width:240px;margin:0}
 .hero__badge img{width:48px;height:48px;border-radius:10px;flex-shrink:0}
